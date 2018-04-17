@@ -159,6 +159,370 @@ public class Netflix {
 
     }
     
-    
+    /**
+     * Método que permite asignar una categoría a una de las 3 posibles
+       variables
+     * @param id
+     * @param categoria 
+     */
+   public static void asignarCategoria (int id, String categoria){
+       
+       
+       
+   }
 
+   /**
+    * Método que permite asignar una de las 2 categorías de cada una de
+      las 10 películas
+    * @param idPelicula
+    * @param numeroCategoria
+    * @param idCategoria 
+    */
+   public static void aisgnarCategoriaPelicula (int idPelicula, int numeroCategoria, int idCategoria){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite asignar un nombre a uno de las 5 posibles
+      clientes
+    * @param id
+    * @param nombre 
+    */
+   public static void asignarCliente (int id, String nombre){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite asignar un nombre a una de las 10 posibles
+      películas
+    * @param id
+    * @param favoritismo 
+    */
+   public static void asignarFavoritismoPelicula (int id, int favoritismo){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite asignar un nombre a una de las 10 posibles
+      películas
+    * @param id
+    * @param nombre 
+    */
+   public static void asignarPelicula (int id, String nombre){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite asignar una de las 3 peliculas favorias por cada
+      uno de los clientes
+    * @param idCliente
+    * @param numeroFvaorita
+    * @param idPelicula 
+    */
+   public static void asignarPeliculaFavoritaCliente (int idCliente, int numeroFvaorita, int idPelicula){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite asignar un sexo a uno de las 5 posibles clientes
+    * @param id
+    * @param sexo 
+    */
+   public static void asignarSexoCliente (int id, String sexo){
+       
+       
+       
+   } 
+   
+   /**
+    * Método que determinar el favoritismo de cada una de las películas
+    */
+   public static void contarFavoritismoPeliculas (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que cuanta la cantidad de películas por categoría
+    * @param idCategoria
+    * @return 
+    */
+   public static int contarPeliculaEnCategoria (int idCategoria){
+       
+       
+       
+   }
+   
+   /**
+    * Método que le pregunta al usuario todas las categorías (cantidad
+      definida en MAX_CATEGORIAS)
+    */
+   public static void leerCategorias (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que le pregunta al usuario todos los clientes con su sexo
+      (cantidad definida en MAX_CLIENTES)
+    */
+   public static void leerClientes (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que le pregunta al usuario su película favorita por categoría
+    */
+   public static void leerFavoritasUsuario (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que le pregunta al usuario todas las películas (cantidad
+      definida en MAX_PELICULAS)
+    */
+   public static void leerPeliculas (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite llenar con datos de prueba todas la varibles
+      haciendo uso de los métodos asignar-----() y de cilos para crear
+      datos ficticios
+    */
+   public static void llenarDatosPrueba (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite acceder a las 3 variables que almacenan la
+      información de las categorías
+    * @param id
+    * @return 
+    */
+   public static String obtenerCategoria (int id){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite acceder a las 2 categorías de cada una de las 10
+      películas
+    * @param idPelicula
+    * @param numeroCategoria
+    * @return 
+    */
+   public static int obtenerCategoriaPelicula (int idPelicula, int numeroCategoria){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite acceder a las 5 variables que almacenan el
+      nombre de los clientes
+    * @param id
+    * @return 
+    */
+   public static String obtenerCliente (int id){
+       
+       
+       
+   }
+   
+   /**
+    * Método que permite acceder a las 10 variables que almacenan las
+      películas
+    * @param id
+    * @return 
+    */
+   public static int obtenerFavoritismoPelicula (int id){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene la lista de todas las categorías en forma de
+      cadena
+    * @return 
+    */
+   public static String obtenerListadoCategorias (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene la lista de las categorías por película
+    * @return 
+    */
+   public static String obtenerListadoCategoriasPorPeliculas (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene la lista de todos los clientes en forma de cadena
+    * @return 
+    */
+   public static String obtenerListadoClientes (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene la lista de clientes por Sexo
+    * @return 
+    */
+   public static String obtenerListadoClientesPorSexo (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene el listado del favoritismo
+    * @return 
+    */
+   public static String obtenerListadoFavoritismo (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene la lista de pelíulas por categoría
+    * @return 
+    */
+   public static String obtenerListadoPeliculaPorCategorias (){
+       
+       
+       
+   }
+   
+   /**
+    * Método que obtiene la lista de todas las películas en forma de
+      cadena
+    * @return 
+    */
+   public static String obtenerListadoPeliculas (){
+       
+       
+       
+   }
+   
+   /**
+     * Método que permite acceder a las 10 variables que almacenan las
+       películas
+     * @param id
+     * @return 
+     */
+    public static String obtenerPelicula (int id){
+        
+        
+        
+    }
+    
+    /**
+     * Método que obtiene la lista de pelíulas por categoría
+     * @param idCategoria
+     * @param posicionPelicula
+     * @return 
+     */
+    public static int obtenerPeliculaCategoria (int idCategoria, int posicionPelicula){
+        
+        
+        
+    }
+    
+    /**
+     * Método que permite acceder a las 3 peliculas favorias por cada uno
+       de los clientes
+     * @param idCliente
+     * @param numeroFavorita
+     * @return 
+     */
+    public static int obtenerPeliculaFavoritaCliente (int idCliente, int numeroFavorita){
+        
+        
+        
+    }
+    
+    /**
+     * Método que obtiene la lista de pelíulas favoritas por usuario
+     * @return 
+     */
+    public static String obtenerPeliculaFavoritasPorUsuario (){
+        
+        
+        
+    }
+    
+    /**
+     * Método que permite acceder a las 5 variables que almacenan el sexo
+       de los clientes
+     * @param id
+     * @return 
+     */
+    public static String obtenerSexoCliente (int id){
+        
+        
+        
+    }
+    
+    /**
+     * Método que ordena los nombre de todas las categorías,
+       manteniendo cohrente todas las categorías ya asignadas a las
+       películas
+     */
+    public static void ordenarCategorias (){
+        
+        
+        
+    }
+    
+    /**
+     * Método que ordena los nombre de todos los clientes, de cambiar el
+       orden se ajusta también el sexo asociado
+     */
+    public static void ordenarClientes (){
+        
+        
+        
+    }
+    
+    /**
+     * Método que ordena las películas según su favoritismo, de cambiar el
+       orden se ajusta también el favoritismo y las categorías a las que
+       pertenece
+     */
+    public static void ordenarPeliculas (){
+        
+        
+        
+    }
 }
