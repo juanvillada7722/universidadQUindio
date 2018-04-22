@@ -158,7 +158,28 @@ public class Netflix {
      * @param categoria
      */
     public static void asignarCategoria(int id, String categoria) {
-
+        
+        int i;
+        
+        for (i=1;i<=3;i++){
+              
+        categoria = leerCadena ("Ingrese nombre de la categoria:"+i) ; 
+         
+        switch ( id )
+        {
+            case 1: categoria01 = categoria;
+            break;
+            
+            case 2: categoria02 = categoria;
+            break;
+            
+            case 3: categoria03 = categoria;
+            break;
+            
+            
+        }
+        
+        }
     }
 
     /**
