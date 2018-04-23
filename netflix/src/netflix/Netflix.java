@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
  * @author juanvillada7722
  */
 public class Netflix {
-    
+
     public static String //variables para las categorias
             categoria01,
             categoria02,
             categoria03;
-    
+
     public static int //peliculas categoria 01
             categoria01Pelicula01,
             categoria01Pelicula02,
@@ -29,7 +29,7 @@ public class Netflix {
             categoria01Pelicula08,
             categoria01Pelicula09,
             categoria01Pelicula10;
-    
+
     public static int //peliculas categoria 02
             categoria02Pelicula01,
             categoria02Pelicula02,
@@ -41,7 +41,7 @@ public class Netflix {
             categoria02Pelicula08,
             categoria02Pelicula09,
             categoria02Pelicula10;
-    
+
     public static int //peliculas categoria 03
             categoria03Pelicula01,
             categoria03Pelicula02,
@@ -53,14 +53,14 @@ public class Netflix {
             categoria03Pelicula08,
             categoria03Pelicula09,
             categoria03Pelicula10;
-    
+
     public static String //nombres de los clientes
             cliente01,
             cliente02,
             cliente03,
             cliente04,
             cliente05;
-    
+
     public static int //favoritismos de los clientes 
             favoritismoPelicula01,
             favoritismoPelicula02,
@@ -72,17 +72,17 @@ public class Netflix {
             favoritismoPelicula08,
             favoritismoPelicula09,
             favoritismoPelicula10;
-    
+
     public static String //generos
             MASCULINO,
             FEMENINO;
-    
+
     public static int //MAX
             MAX_CATEGORIAS,
             MAX_CATEGORIAS_PELICULA,
             MAX_CLIENTES,
             MAX_PELICULAS;
-    
+
     public static String //peliculas
             pelicula01,
             pelicula02,
@@ -94,7 +94,7 @@ public class Netflix {
             pelicula08,
             pelicula09,
             pelicula10;
-    
+
     public static int //peliculas favoritas por cliente
             peliculaFavorita01Cliente01,
             peliculaFavorita01Cliente02,
@@ -111,67 +111,67 @@ public class Netflix {
             peliculaFavorita03Cliente03,
             peliculaFavorita03Cliente04,
             peliculaFavorita03Cliente05;
-    
+
     public static String //sexo por clientes
             sexoCliente01,
             sexoCliente02,
             sexoCliente03,
             sexoCliente04,
             sexoCliente05;
-    
+
+    public static String categoria;
+
     public static void main(String[] args) {
         asignarCategoria();
-        
+
         imprimir("las categorias son: "
                 + "\n" + "1." + categoria01
                 + "\n" + "2." + categoria02
                 + "\n" + "3." + categoria03
         );
-        
+
         asignarPelicula();
-        
+
         imprimir("las peliculas son: "
-                + "\n" + "1." + pelicula01
-                + "\n" + "2." + pelicula02
-                + "\n" + "3." + pelicula03
-                + "\n" + "4." + pelicula04
-                + "\n" + "5." + pelicula05
-                + "\n" + "6." + pelicula06
-                + "\n" + "7." + pelicula07
-                + "\n" + "8." + pelicula08
-                + "\n" + "9." + pelicula09
-                + "\n" + "10." + pelicula10
+                + "\n" + "1." + pelicula01 + categoria
+                + "\n" + "2." + pelicula02 + categoria
+                + "\n" + "3." + pelicula03 + categoria
+                + "\n" + "4." + pelicula04 + categoria
+                + "\n" + "5." + pelicula05 + categoria
+                + "\n" + "6." + pelicula06 + categoria
+                + "\n" + "7." + pelicula07 + categoria
+                + "\n" + "8." + pelicula08 + categoria
+                + "\n" + "9." + pelicula09 + categoria
+                + "\n" + "10." + pelicula10 + categoria
         );
-        
-        asignarCategoriaPelicula();
-        
+
     }
 
     //metodo para imprimir
     public static void imprimir(String pregunta) {
-        
+
         JOptionPane.showMessageDialog(null, pregunta);
-        
+
     }
 
     //metodo para leer cadena
     public static String leerCadena(String pregunta) {
-        
+
         return JOptionPane.showInputDialog(pregunta);
-        
+
     }
 
     //metodo para leer entero
     public static int leeEntero(String pregunta) {
-        
+
         return Integer.parseInt(JOptionPane.showInputDialog(pregunta));
     }
 
     //metodo para leer caracter
     public static char leerCaracter(String pregunta) {
-        
+
         return JOptionPane.showInputDialog(null, pregunta).charAt(0);
-        
+
     }
 
     /**
@@ -182,28 +182,28 @@ public class Netflix {
      * @param categoria
      */
     public static void asignarCategoria() {
-        
+
         int id;
-        
+
         for (id = 1; id <= 3; id++) {
-            
+
             String categoria = leerCadena("Ingrese nombre de la categoria:" + id);
-            
+
             switch (id) {
                 case 1:
                     categoria01 = categoria;
                     break;
-                
+
                 case 2:
                     categoria02 = categoria;
                     break;
-                
+
                 case 3:
                     categoria03 = categoria;
                     break;
-                
+
             }
-            
+
         }
     }
 
@@ -216,76 +216,14 @@ public class Netflix {
      * @param idCategoria
      */
     public static void asignarCategoriaPelicula() {
-        
-        for (int i = 1; i <= 2; i++) {
-            
-          
-                try {
-                    
-                    char categoria1 = leerCaracter ("Agregar  " + pelicula01  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                    
-                   char categoria2 = leerCaracter ("Agregar  " + pelicula02  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria3 = leerCaracter ("Agregar  " + pelicula03  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria4 = leerCaracter ("Agregar  " + pelicula04  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria5 = leerCaracter ("Agregar  " + pelicula05  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria6 = leerCaracter ("Agregar  " + pelicula06  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria7 = leerCaracter ("Agregar  " + pelicula07  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria8 = leerCaracter ("Agregar  " + pelicula08  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria9 = leerCaracter ("Agregar  " + pelicula09  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                   
-                   char categoria10 = leerCaracter ("Agregar  " + pelicula10  + "  a las catgeorias \n"
-                    + categoria01 + "\n"
-                    + categoria02 + "\n"
-                    + categoria03 + "\n");
-                  
-                } catch (Exception ex) {
-                    imprimir("esta ingresando parametros incorrectos");
-                }
-            
-            
-        }
+
+    }
 
 //        for (int i = 1; i <= 3; i++) {
 //            for (int j = 1; j <= 10; j++) {
 //
 //            }
 //        }
-    }
-
     /**
      * Método que permite asignar un nombre a uno de las 5 posibles clientes
      *
@@ -293,7 +231,7 @@ public class Netflix {
      * @param nombre
      */
     public static void asignarCliente(int id, String nombre) {
-        
+
     }
 
     /**
@@ -303,7 +241,7 @@ public class Netflix {
      * @param favoritismo
      */
     public static void asignarFavoritismoPelicula(int id, int favoritismo) {
-        
+
     }
 
     /**
@@ -313,58 +251,74 @@ public class Netflix {
      * @param nombre
      */
     public static void asignarPelicula() {
-        
+
         int id;
-        
-        for (id = 1; id <= 10; id++) {
-            
-            String pelicula = leerCadena("Ingrese nombre de la pelicula:" + id);
-            
-            switch (id) {
+
+        for (int j = 1; j <= 10; j++) {
+
+            String pelicula = leerCadena("Ingrese nombre de la pelicula:" + j);
+            categoria = leerCadena("Que categoria elije: " + "las categorias son: "
+                    + "\n" + "1." + categoria01
+                    + "\n" + "2." + categoria02
+                    + "\n" + "3." + categoria03
+            );
+            switch (categoria) {
+
+                case "1":
+                    categoria = categoria01;
+
+                case "2":
+                    categoria = categoria02;
+
+                case "3":
+                    categoria = categoria03;
+
+            }
+            switch (j) {
                 case 1:
                     pelicula01 = pelicula;
                     break;
-                
+
                 case 2:
                     pelicula02 = pelicula;
                     break;
-                
+
                 case 3:
                     pelicula03 = pelicula;
                     break;
-                
+
                 case 4:
                     pelicula04 = pelicula;
                     break;
-                
+
                 case 5:
                     pelicula05 = pelicula;
                     break;
-                
+
                 case 6:
                     pelicula06 = pelicula;
                     break;
-                
+
                 case 7:
                     pelicula07 = pelicula;
                     break;
-                
+
                 case 8:
                     pelicula08 = pelicula;
                     break;
-                
+
                 case 9:
                     pelicula09 = pelicula;
                     break;
-                
+
                 case 10:
                     pelicula10 = pelicula;
                     break;
-                
+
             }
-            
+
         }
-        
+
     }
 
     /**
@@ -376,7 +330,7 @@ public class Netflix {
      * @param idPelicula
      */
     public static void asignarPeliculaFavoritaCliente(int idCliente, int numeroFvaorita, int idPelicula) {
-        
+
     }
 
     /**
@@ -386,14 +340,14 @@ public class Netflix {
      * @param sexo
      */
     public static void asignarSexoCliente(int id, String sexo) {
-        
+
     }
 
     /**
      * Método que determinar el favoritismo de cada una de las películas
      */
     public static void contarFavoritismoPeliculas() {
-        
+
     }
 
     /**
@@ -403,9 +357,9 @@ public class Netflix {
      * @return
      */
     public static int contarPeliculaEnCategoria(int idCategoria) {
-        
+
         return 0;
-        
+
     }
 
     /**
@@ -413,7 +367,7 @@ public class Netflix {
      * en MAX_CATEGORIAS)
      */
     public static void leerCategorias() {
-        
+
     }
 
     /**
@@ -421,14 +375,14 @@ public class Netflix {
      * (cantidad definida en MAX_CLIENTES)
      */
     public static void leerClientes() {
-        
+
     }
 
     /**
      * Método que le pregunta al usuario su película favorita por categoría
      */
     public static void leerFavoritasUsuario() {
-        
+
     }
 
     /**
@@ -436,7 +390,7 @@ public class Netflix {
      * en MAX_PELICULAS)
      */
     public static void leerPeliculas() {
-        
+
     }
 
     /**
@@ -444,7 +398,7 @@ public class Netflix {
      * uso de los métodos asignar-----() y de cilos para crear datos ficticios
      */
     public static void llenarDatosPrueba() {
-        
+
     }
 
     /**
@@ -455,9 +409,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerCategoria(int id) {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -469,9 +423,9 @@ public class Netflix {
      * @return
      */
     public static int obtenerCategoriaPelicula(int idPelicula, int numeroCategoria) {
-        
+
         return 0;
-        
+
     }
 
     /**
@@ -482,9 +436,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerCliente(int id) {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -494,9 +448,9 @@ public class Netflix {
      * @return
      */
     public static int obtenerFavoritismoPelicula(int id) {
-        
+
         return 0;
-        
+
     }
 
     /**
@@ -505,9 +459,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoCategorias() {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -516,7 +470,7 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoCategoriasPorPeliculas() {
-        
+
         return "";
     }
 
@@ -526,7 +480,7 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoClientes() {
-        
+
         return "";
     }
 
@@ -536,9 +490,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoClientesPorSexo() {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -547,7 +501,7 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoFavoritismo() {
-        
+
         return "";
     }
 
@@ -557,9 +511,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoPeliculaPorCategorias() {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -568,9 +522,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerListadoPeliculas() {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -580,9 +534,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerPelicula(int id) {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -593,7 +547,7 @@ public class Netflix {
      * @return
      */
     public static int obtenerPeliculaCategoria(int idCategoria, int posicionPelicula) {
-        
+
         return 0;
     }
 
@@ -606,9 +560,9 @@ public class Netflix {
      * @return
      */
     public static int obtenerPeliculaFavoritaCliente(int idCliente, int numeroFavorita) {
-        
+
         return 0;
-        
+
     }
 
     /**
@@ -617,9 +571,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerPeliculaFavoritasPorUsuario() {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -630,9 +584,9 @@ public class Netflix {
      * @return
      */
     public static String obtenerSexoCliente(int id) {
-        
+
         return "";
-        
+
     }
 
     /**
@@ -640,7 +594,7 @@ public class Netflix {
      * cohrente todas las categorías ya asignadas a las películas
      */
     public static void ordenarCategorias() {
-        
+
     }
 
     /**
@@ -648,7 +602,7 @@ public class Netflix {
      * se ajusta también el sexo asociado
      */
     public static void ordenarClientes() {
-        
+
     }
 
     /**
@@ -656,6 +610,6 @@ public class Netflix {
      * se ajusta también el favoritismo y las categorías a las que pertenece
      */
     public static void ordenarPeliculas() {
-        
+
     }
 }
