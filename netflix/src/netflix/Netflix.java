@@ -133,16 +133,16 @@ public class Netflix {
         asignarPelicula();
 
         imprimir("las peliculas son: "
-                + "\n" + "1." + pelicula01 + categoria
-                + "\n" + "2." + pelicula02 + categoria
-                + "\n" + "3." + pelicula03 + categoria
-                + "\n" + "4." + pelicula04 + categoria
-                + "\n" + "5." + pelicula05 + categoria
-                + "\n" + "6." + pelicula06 + categoria
-                + "\n" + "7." + pelicula07 + categoria
-                + "\n" + "8." + pelicula08 + categoria
-                + "\n" + "9." + pelicula09 + categoria
-                + "\n" + "10." + pelicula10 + categoria
+                + "\n" + "1." + pelicula01
+                + "\n" + "2." + pelicula02
+                + "\n" + "3." + pelicula03
+                + "\n" + "4." + pelicula04
+                + "\n" + "5." + pelicula05
+                + "\n" + "6." + pelicula06
+                + "\n" + "7." + pelicula07
+                + "\n" + "8." + pelicula08
+                + "\n" + "9." + pelicula09
+                + "\n" + "10." + pelicula10
         );
 
     }
@@ -257,62 +257,73 @@ public class Netflix {
         for (int j = 1; j <= 10; j++) {
 
             String pelicula = leerCadena("Ingrese nombre de la pelicula:" + j);
-            categoria = leerCadena("Que categoria elije: " + "las categorias son: "
+            String categorias = leerCadena("Que categoria elije: " + "las categorias son: "
                     + "\n" + "1." + categoria01
                     + "\n" + "2." + categoria02
                     + "\n" + "3." + categoria03
             );
-            switch (categoria) {
+            
+            
+
+            switch (categorias) {
 
                 case "1":
-                    categoria = categoria01;
+                   categoria = categoria01;
+                   break;
 
                 case "2":
                     categoria = categoria02;
+                    break;
 
                 case "3":
                     categoria = categoria03;
+                    break;
 
             }
+            
+            
+            
+            
+
             switch (j) {
                 case 1:
-                    pelicula01 = pelicula;
+                    pelicula01 = pelicula + " ---> " + categoria;
                     break;
 
                 case 2:
-                    pelicula02 = pelicula;
+                    pelicula02 = pelicula + " ---> " + categoria;
                     break;
 
                 case 3:
-                    pelicula03 = pelicula;
+                    pelicula03 = pelicula + " ---> " + categoria;
                     break;
 
                 case 4:
-                    pelicula04 = pelicula;
+                    pelicula04 = pelicula + " ---> " + categoria;
                     break;
 
                 case 5:
-                    pelicula05 = pelicula;
+                    pelicula05 = pelicula + " ---> " + categoria;
                     break;
 
                 case 6:
-                    pelicula06 = pelicula;
+                    pelicula06 = pelicula + " ---> " + categoria;
                     break;
 
                 case 7:
-                    pelicula07 = pelicula;
+                    pelicula07 = pelicula + " ---> " + categoria;
                     break;
 
                 case 8:
-                    pelicula08 = pelicula;
+                    pelicula08 = pelicula + " ---> " + categoria;
                     break;
 
                 case 9:
-                    pelicula09 = pelicula;
+                    pelicula09 = pelicula + " ---> " + categoria;
                     break;
 
                 case 10:
-                    pelicula10 = pelicula;
+                    pelicula10 = pelicula + " ---> " + categoria;
                     break;
 
             }
